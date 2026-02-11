@@ -1,0 +1,495 @@
+# Introduction
+
+This is a structure document for collecting industry intel on Enteprise Agentic Flow related topics.
+The goal is to use this information to design an enteprise open multi-agent communication protocol.
+
+## Enterprise Agentic AI platforms
+
+The list of major or promising enterprise platforms:
+
+- OpenAI Frontier Platform 
+- Anthropic's Cowork 
+- Corti Agentic Framework
+- Google Enterprise Agent Hubs
+- IBM FlashSystem (Agentic AI for storage)
+
+## Major AI Model Releases (2026)
+
+### Proprietary Models
+- **OpenAI GPT-5.3 Codex**: Advanced agentic coding model, 25% faster, SOTA on SWE-Bench Pro (56.8%), Terminal-Bench 2.0 (77.3%), OSWorld-Verified (64.7%)
+- **Anthropic Claude Opus 4.6**: 1M token context, multi-agent teams, SOTA on agentic coding, Humanity's Last Exam, GDPval-AA, BigLaw Bench (90.2%), SWE-Bench Verified (81.42%)
+- **Google Gemini 3**: Flagship model for high-level reasoning and agentic operations
+- **xAI Physical World Model**: Enhanced understanding and manipulation of physical environments
+- **Google Project Genie**: 3D environment generation from prompts
+- **Perplexity Model Council**: Model aggregation system
+- **Kling 3.0**: Highly realistic video generation
+- **Hedra Omnia Alpha**: Audio-driven generative model with full control
+
+### Open-Source Models
+- **Kimi K2.5 (Moonshot AI)**: 1T parameters MoE, 15T tokens, Agent Swarm, 96% on AIME 2025, 87% on GPQA-Diamond
+- **Qwen 3 (Alibaba)**: MCP support, 119 languages, hybrid reasoning
+- **Qwen3-Coder-Next**: 80B params (3B active), 800K verifiable tasks, matches Sonnet 4.5
+- **Qwen3-TTS**: Multilingual text-to-speech with voice cloning
+- **MiniCPM-o 4.5 (OpenBMB)**: 9B params, first open-source full-duplex omni-modal LLM, 77.6 on OpenCompass
+- **K2 Think V2 (MBZUAI)**: Frontier-class reasoning model on sovereign system
+- **Hermes 4 70B**: Beats Grok 4 and Gemini 2.5 in coding, logic, writing
+- **ACE-Step-v1.5**: 2B music generation AI, ~4GB VRAM, MIT-licensed
+- **Latam-GPT (Chile)**: First major LLM for Latin America, $550K development cost
+- **LongCat-Video (Meituan)**: Text-to-video model, long cinematic videos
+- **AlphaGenome (DeepMind)**: DNA mutation prediction across 11 processes
+- **RedSage**: Cybersecurity generalist LLM
+- **Arcee Trinity Large**: U.S.-made open-source model with 10T checkpoint
+
+### Specialized Models & Tools
+- **Carbon Robotics LPM**: Large Plant Model for real-time weed detection
+- **OpenAI Prism**: Research tool for scientific writing
+- **Mistral Voxtral Transcribe 2**: Audio transcription model
+- **DiffSyn (MIT)**: Material synthesis recipe generation
+- **Grok Imagine API**: Image generation API
+
+## Enteprise Agentic Flow framework capabilities
+
+### Schema/model
+#### OSAF
+#### Model Context Protocol (MCP)
+- Supported by Qwen 3, Corti Agentic Framework
+- Standard for agent-to-agent interoperability
+
+### Blockchain backing
+#### RFC 8004
+
+### Identity
+#### Agntcy
+
+### Orchestration
+- Multi-agent teams (Anthropic Claude Opus 4.6)
+- Parallel execution (OpenAI Frontier)
+- Dynamic agent coordination and handoffs
+- Shared context and onboarding
+
+### Routing
+Routing work
+- DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching (https://arxiv.org/list/cs.AI/recent)
+- LLM Router (https://github.com/ulab-uiuc/LLMRouter)
+
+### Model management
+- Model Council (Perplexity)
+- Hybrid model support (mixed Claude, Gemini, GPT, Grok, local)
+
+### Context Management
+- 1M token context windows (Claude Opus 4.6)
+- Context compaction for long-running tasks
+- Persistent memory (claude-mem plugin)
+- Adaptive effort controls
+
+### Agent capabilities 
+
+### Security 
+- Agent2Agent threat taxonomy (arXiv:2602.05877)
+- Sleeper agent backdoor detection (Microsoft)
+- Built-in vulnerability detection (GPT-5.3 Codex)
+- Cybersecurity capabilities and CTF challenges
+- Ransomware detection (<1 min, IBM FlashSystem)
+- Guardrails and governance controls
+- Safe inference and enterprise compliance
+- THINKSAFE: Self-Generated Safety Alignment for Reasoning Models
+
+### Agent Collaboration & Teams
+- Multi-agent teams with parallel coordination (Anthropic)
+- Subagent handoffs and autonomous coordination
+- Agent-to-Agent (A2A) communication
+- Mixed model agent systems (MassGen)
+- Agent swarm orchestration (Kimi K2.5 Agent Swarm)
+
+### Agent profile
+
+#### Communication & Negotiation
+- AgenticPay: Multi-Agent LLM Negotiation System for Buyer-Seller Transactions (arXiv:2602.06008)
+
+#### Memory & Learning
+- MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents
+- Self-Distillation Fine-Tuning (SDFT) for continual learning without catastrophic forgetting
+- Self-Improving Pretraining (Meta AI)
+
+#### Rewards
+Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.23228v1)
+
+#### Reputation
+
+#### Performance (time, cost)
+- 25% faster inference (GPT-5.3 Codex)
+- Context compaction and efficiency
+- Adaptive effort controls (low to max reasoning depth)
+- 128k output tokens support
+
+#### Quality (accuracy, retries)
+- Consistency and limit-awareness (CAR-bench)
+- Self-feedback mechanisms (iGRPO)
+- Built-in risk detection (Spider-Sense)
+
+#### Outcomes vs tasks 
+ - OpenAI's Outcome Contracts: A new feature binding autonomous agents to measurable business results, shifting from task-based to outcome-driven AI
+
+### Benchmarking & Evaluation
+- AIRS-Bench: evaluating frontier AI agents on scientific research tasks
+- CAR-bench: Evaluating consistency and limit-awareness under uncertainty
+- BABE: Biology Arena BEnchmark
+- SWE-Bench Pro, SWE-Bench Verified
+- Terminal-Bench 2.0 (agentic coding)
+- GDPval-AA (economic value tasks)
+- BigLaw Bench (legal reasoning)
+- TSAQA: Time Series Analysis Q&A Benchmark
+- Humanity's Last Exam (multidisciplinary reasoning)
+
+### Training & Development
+- ScaleEnv: synthesizing diverse training environments for generalist tool-use agents
+- Self-Distillation Fine-Tuning (SDFT)
+- Reward models for agent reasoning (arXiv:2601.22154)
+- 800K verifiable tasks in executable environments (Qwen3-Coder-Next)
+- Evolutionary rate prediction in pretraining (genome language models)
+- Self-Improving Pretraining with post-trained judge models
+
+### Tools & Integration
+- Customizable plug-ins (Anthropic Cowork)
+- Third-party system integration (Salesforce, Workday, databases)
+- PowerPoint and Excel integration
+- MCP (Model Context Protocol) support
+- Tool-use capabilities across 119 languages (Qwen 3)
+- Computer use and desktop automation (OSWorld-Verified)
+
+### Agent Autonomy & Reasoning
+- Long-running autonomous tasks (research, deployment, PRDs)
+- Interactive steering and real-time interaction
+- Full professional workflows (debugging, data analysis, slide decks)
+- TKG-Thinker: Dynamic reasoning over temporal knowledge graphs via agentic RL
+- Hybrid reasoning modes
+- Proactive interactions and reminders
+
+### Domain-Specific Applications
+#### Healthcare & Life Sciences
+- Corti Agentic Framework (medical coding, clinical decision support)
+- Medical information extraction (ChatGPT)
+- Early disease detection (pancreatic cancer from CT scans)
+
+#### Cybersecurity
+- RedSage: Cybersecurity Generalist LLM
+- Vulnerability scanning and CTF challenges
+- Threat intelligence visualization (Quantickle)
+
+#### Robotics & Physical World
+- xAI models for physical world understanding
+- DynamicVLA: Vision-Language-Action Model for dynamic object manipulation
+- Toyota self-learning assembly AI
+- Carbon Robotics Large Plant Model (LPM)
+
+#### Software Development
+- Agentic coding (GPT-5.3 Codex, Claude Opus 4.6)
+- Repository-specific coding (SERA)
+- DynaWeb: Model-Based RL for web agents
+- Continuous AI patterns with background agents
+
+#### Finance & Legal
+- Financial workflow automation
+- BigLaw Bench for legal reasoning
+- Goldman Sachs AI agent collaboration
+
+#### Research & Science
+- OpenAI Prism for scientific writing
+- Idea2Story: automated research narrative pipeline
+- AIRS-Bench for AI scientists
+- AlphaGenome for disease-causing DNA mutation prediction
+
+## Notable Open-Source Projects & Models
+
+### Multi-Agent Frameworks
+- OpenClaw (formerly MoltBot/Clawdbot): personal AI assistant with 162K+ GitHub stars
+- MassGen: multi-agent system alternative to Claude Code Agent Teams, supports mixed models
+- ChatDev 2.0: LLM-powered multi-agent collaboration for software development (29,946 stars)
+- MoltBook: open-source social network for AI agents
+
+### Memory & Context Tools
+- claude-mem: TypeScript plugin for persistent memory in coding sessions (24K stars)
+- Continuous AI (GitHub Next): background agents for repositories with reasoning tasks
+
+### Agent Development Tools
+- agent-lightning (Microsoft): trainer for efficient AI agents (516 stars)
+- skills (OpenAI): Skills Catalog for Codex (3,606 stars)
+- Daggr (Gradio): Python library for building/debugging multi-step AI workflows
+- 99 (ThePrimeagen): Neovim AI agent for enhanced coding workflows (542 stars)
+
+### Open-Source Models
+- Kimi K2.5 (Moonshot AI): 1T parameter mixture-of-experts, 15T tokens training
+- Qwen 3: fully open-source with MCP support, 119 languages, hybrid reasoning
+- Qwen3-Coder-Next: 80B params (3B active) optimized for coding agents
+- Qwen3-TTS: multilingual text-to-speech with voice cloning
+- MiniCPM-o 4.5: 9B parameter omni-modal LLM with full-duplex streaming
+- K2 Think V2 (MBZUAI): frontier-class open-source reasoning model
+- Hermes 4 70B: open-source reasoning model for coding, logic, writing
+- ACE-Step-v1.5 (2B): open-source music generation AI (MIT-licensed)
+- Latam-GPT (Chile): first major open-source LLM for Latin America
+- LongCat-Video (Meituan): open-source text-to-video model
+- AlphaGenome (DeepMind): open-sourced model for DNA mutation prediction
+
+### Development Infrastructure
+- BitNet (Microsoft): framework for 1-bit LLMs (137 stars)
+- PaddleOCR: lightweight OCR toolkit, 100+ languages (171 stars)
+- WorkAny: desktop AI agent with SiliconFlow integration
+- WrenAI: generative BI tool for natural language database queries (13,881 stars)
+
+### Specialized Tools
+- qlib (Microsoft): AI-oriented quant investment platform with RL (36,503 stars)
+- Quantickle (RSAC): open-source threat intelligence visualization
+- DiffSyn (MIT): generative AI for material synthesis recipes
+
+## Emerging Technologies & Research Areas
+
+### Advanced Context & Efficiency
+- Hybrid Linear Attention for extremely long contexts
+- POP (Online Structural Pruning) for trillion-parameter deployment
+- Context windows up to 1M tokens
+- 128k output token support
+
+### Multimodal Capabilities
+- Full-duplex omni-modal processing (vision, audio, voice)
+- Audio-driven video generation (JUST-DUB-IT, Hedra Omnia Alpha)
+- Vision-Language-Action models for robotics
+- Text-to-video generation (Kling 3.0, Project Genie)
+- Synchronized video-audio generation (MOVA)
+
+### Neuro-Symbolic & Interpretability
+- Neuro-Symbolic AI Framework combining deep learning with symbolic logic
+- Mechanistic Data Attribution: tracing LLM behaviors to training data
+- Constitutions for atomic concept edits
+- Modality gap-driven subspace alignment
+
+### Regional & Specialized Models
+- Latam-GPT for Latin American data/languages
+- Indonesia-specific regulatory compliance (Grok)
+- UAE sovereign AI infrastructure (K2 Think V2)
+- Domain-specific expert modules for healthcare
+
+## Enterprise Integration Patterns
+
+### Governance & Compliance
+- Agent permissions and access controls
+- Regulatory compliance and auditability
+- Governed autonomy to prevent drift
+- Data access controls and sovereignty
+- Enterprise safety and guardrails
+
+### Business Process Automation
+- Workflow automation in marketing, legal, support
+- Revenue cycle management
+- Procurement, budgeting, grants, payments (public sector)
+- Storage array co-administration (IBM FlashSystem)
+- HR and payroll decision support
+
+### Development & Deployment
+- Shared business context and onboarding
+- Treating agents like employees
+- Limited customer availability rollouts
+- Cloud platform integration
+- Desktop and terminal-based interaction (Gemini CLI)
+
+## Industry Trends & Market Dynamics
+
+### Major Funding & Investments
+- Anthropic: $500M funding for safe, interpretable AI
+- Snowflake-OpenAI: $200M partnership for enterprise AI agents
+- ElevenLabs: $500M for generative audio AI
+- Databricks: $5B funding amid IPO buzz
+- Apollo-xAI: $3.4B deal for AI chip infrastructure
+- D-Wave: $30M in quantum computing contracts
+- Physical Intelligence Robotics: Stripe-backed for compact AI
+- NVIDIA $100B OpenAI plan (paused amid scrutiny)
+
+### Enterprise Adoption & Trials
+- Early customers: Intuit, Uber, State Farm, Thermo Fisher (OpenAI Frontier)
+- Goldman Sachs partnership with Anthropic
+- Tesla AI training expansion in China
+- Toyota self-learning assembly AI deployment
+- IBM FlashSystem autonomous storage management
+
+### Market Impacts & Concerns
+- Software stock volatility ("SaaSpocalypse") from AI disruption fears
+- $800B wipeout in software stock values
+- 50,000+ tech layoffs in 2025 linked to AI shifts
+- Amazon $200B AI spend causing 8% stock drop
+- Big Tech $650B AI capex commitment for 2026
+- Apple 16% revenue growth from on-device AI
+- Cloud 3.0 and intelligent ops trends
+
+### Regulatory & Policy
+- China state-mandated AI in school curricula
+- Indonesia conditional lift of Grok ban
+- China approval of DeepSeek H200 chip purchase
+- International AI Safety Report 2026
+- AI consciousness and ethics concerns
+- Responsible AI adoption in public sector
+
+### Competitive Landscape
+- OpenAI vs Anthropic: ad strategy debates (Super Bowl ads)
+- Amazon-OpenAI talks for Alexa enhancement
+- Musk company merger talks (SpaceX, Tesla, xAI)
+- Palantir defense of surveillance tech with government contracts
+- Open models at 20% usage despite 90% performance at 87% lower cost
+
+## Research & Academic Developments
+
+### Key Institutions & Initiatives
+- MIT & ETH Zurich: Self-Distillation Fine-Tuning
+- Google DeepMind: AlphaGenome, AGI as Collective Intelligence
+- Meta AI: Self-Improving Pretraining
+- MBZUAI & WEF: Abu Dhabi Centre for Intelligent Future
+- Chile's CENIA: Latam-GPT with 30+ institutions
+- Kennesaw State University: B.S. in AI program (Fall 2026)
+- Florida Atlantic University: $20M D-Wave quantum deal
+
+### Benchmark Development
+- AIRS-Bench: 30+ authors for AI scientist evaluation
+- BABE: Biology Arena BEnchmark
+- CAR-bench: consistency and limit-awareness evaluation
+- Terminal-Bench 2.0: agentic coding evaluation
+- SWE-Bench Pro & Verified variants
+- TSAQA: time series analysis Q&A
+- GDPval-AA: economic value tasks
+- BigLaw Bench: legal reasoning at 90.2%
+- Humanity's Last Exam: multidisciplinary reasoning
+
+### Novel Research Directions
+- AI swarms in social media (democracy threats)
+- AGI as collective intelligence vs single system
+- Quantum RL with Transformers for vehicle routing
+- LLM-FSM for finite-state reasoning in RTL code
+- Evolutionary rate prediction in genome models
+- Vision-language models perception vs recall testing
+- AI surpassing average human creativity
+- AI learning faster by "talking to itself"
+
+## Notable Research Papers
+
+### Multi-Agent & Reasoning
+- **DyTopo**: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching (arXiv:2602.06039)
+- **AgenticPay**: Multi-Agent LLM Negotiation System for Buyer-Seller Transactions (arXiv:2602.06008)
+- **Scaling Multiagent Systems with Process Rewards**: Improving coordination with reward structures
+- **TKG-Thinker**: Dynamic Reasoning over Temporal Knowledge Graphs via Agentic RL
+- **Exploring Reasoning Reward Model for Agents** (arXiv:2601.22154)
+- **Agent2Agent Threats in Safety-Critical LLM Assistants**: Human-Centric Taxonomy (arXiv:2602.05877)
+- **AGI as Collective Intelligence**: Networks of specialized agents vs single system (Google DeepMind)
+
+### Agent Capabilities & Learning
+- **MemSkill**: Learning and Evolving Memory Skills for Self-Evolving Agents
+- **ScaleEnv**: Synthesizing diverse training environments for generalist tool-use agents
+- **ASTRA**: Automated Synthesis of Agentic Trajectories
+- **Golden Goose**: Synthesize Unlimited RLVR Tasks
+- **Spider-Sense**: Intrinsic Risk Sensing for Efficient Agent Defense with Hierarchical Adaptive Screening
+
+### Training & Fine-Tuning
+- **Self-Distillation Fine-Tuning (SDFT)**: Continual learning without catastrophic forgetting (MIT & ETH Zurich)
+- **Self-Improving Pretraining**: Using post-trained judge models for safer, factual LLMs (Meta AI)
+- **Scalable Power Sampling**: Training-free inference improvements
+- **STAR**: Similarity-guided Teacher-Assisted Refinement for Super-Tiny Function Calling Models (ICLR 2026)
+- **iGRPO**: Self-Feedback-Driven LLM Reasoning
+
+### Multimodal & Generation
+- **DynamicVLA**: Vision-Language-Action Model for Dynamic Object Manipulation (arXiv:2601.22153)
+- **JUST-DUB-IT**: Audio-Driven Generation and Manipulation of Talking Head Videos (arXiv:2601.22141)
+- **OmniVideo-R1**: Reinforcing Audio-visual Reasoning with Query Intention and Modality Attention
+- **MOVA**: Towards Scalable and Synchronized Video-Audio Generation
+- **AutoFigure**: Generating and Refining Publication-Ready Scientific Illustrations (ICLR 2026)
+- **Modality Gap-Driven Subspace Alignment**: Training Paradigm for Multimodal LLMs
+
+### Context & Efficiency
+- **Hybrid Linear Attention Done Right**: Efficient Distillation for Extremely Long Contexts (arXiv:2601.22156)
+- **POP (Online Structural Pruning)**: Dynamic pruning for trillion-parameter deployment
+- **Strongly Polynomial Time Complexity of Policy Iteration for Robust MDPs**
+
+### Web & Robotics
+- **DynaWeb**: Model-Based Reinforcement Learning of Web Agents (arXiv:2601.22146)
+- **Quantum Reinforcement Learning with Transformers**: Capacitated Vehicle Routing Problem (arXiv:2602.05920)
+
+### Healthcare & Biology
+- **Early and Prediagnostic Detection of Pancreatic Cancer from Computed Tomography** (arXiv:2601.22125)
+- **BABE: Biology Arena BEnchmark** (arXiv:2602.05857)
+- **Predicting Evolutionary Rate as a Pretraining Task**: Improves Genome Language Models
+
+### Interpretability & Safety
+- **Mechanistic Data Attribution**: Tracing Training Origins of Interpretable LLM Units
+- **THINKSAFE**: Self-Generated Safety Alignment for Reasoning Models
+- **Interpreting and Controlling Model Behavior via Constitutions**: Atomic Concept Edits (AISTATS 2026)
+- **Do VLMs Perceive or Recall?**: Probing Visual Perception vs. Memory (arXiv:2601.22149)
+
+### Medical & Information Extraction
+- **ChatGPT for Medical Information Extraction**: Performance, Explainability
+- **Authority Signals in AI Health Sources**: Evaluating Credibility in ChatGPT Answers
+
+### Scientific & Research Tools
+- **Idea2Story**: Automated Pipeline for Research Concepts to Scientific Narratives
+- **OCRVerse**: Holistic OCR in End-to-End Vision-Language Models
+- **Exploring the Limits of Complex Reasoning with GTOC 12** (AIAA SciTech 2026)
+- **From Abstract to Contextual**: What LLMs Still Cannot Do in Mathematics
+
+### Other Specialized Topics
+- **TSAQA**: Time Series Analysis Question And Answering Benchmark
+- **LLM-FSM**: Finite-state reasoning in RTL code generation
+- **Routing the Lottery**: Adaptive Subnetworks for Heterogeneous Data
+- **Guide to LLMs in Modeling and Simulation**: Core Techniques to Critical Challenges (arXiv:2602.05883)
+
+## Societal & Educational Impacts
+
+### Education & Workforce
+- AI-driven job displacement anxiety (2/3 of workers)
+- AI vs employment debates (Financial Times analysis)
+- AI in education mandates (China)
+- Bachelor's programs in AI launching
+- Concerns about AI-generated research flooding journals
+- GitHub considering "kill switch" for AI-generated PRs
+
+### Ethical & Safety Concerns
+- AI consciousness risks outpacing understanding
+- Neurotechnology advances and ethics
+- AI-washing behind layoffs
+- Authority signals in AI health sources
+- Credibility evaluation in ChatGPT health responses
+- Trust-based scam prevention (BeeSafe AI)
+- Sex trafficking investigation tools (USC)
+
+### Real-World Applications
+- Weather forecasting accuracy challenges
+- Early pancreatic cancer detection from CT scans
+- Disease-causing mutation identification
+- Defect simulations reduced from hours to milliseconds
+- Material synthesis acceleration
+- Agricultural weed detection (Carbon AI)
+- AI in chemistry: 35 new compound synthesis 
+
+## Notable Tools & Announcements
+
+### Development Tools
+- **OpenAI Codex App**: Enhanced coding capabilities with integration
+- **Xcode 26.3 Update**: Integrates Claude Agent and OpenAI Codex for agentic coding
+- **Google Antigravity**: Coding environment for code refactoring
+- **Gemini CLI**: Enhanced terminal-based AI interactions with prompt chaining
+- **Google Developer Knowledge API**: MCP Server in public preview
+- **Perplexity Deep Research**: Enhanced comprehensive AI-driven investigations
+
+### Integrations & Plugins
+- **Claude in Excel**: Enhanced spreadsheet integration
+- **Claude in PowerPoint**: Research preview for visual generation with layout respect
+- **Anthropic Legal Plug-in**: Automating contract review and legal tasks
+- **BeeSafe AI**: Trust-based scam prevention (Y Combinator backed)
+
+### Infrastructure & Platform Updates
+- **StabilityAI AI-Generated Art Tool**: Accessible for non-technical users
+- **IBM Watson Healthcare Updates**: Enhanced diagnostic accuracy
+- **AWS AI Security Patch**: Vulnerabilities in AI data processing
+- **Tesla Autopilot AI Update**: Improved navigation and obstacle detection
+
+### Other Notable Developments
+- **OpenAI Model Retirements**: Retiring GPT-4o by February 13, 2026
+- **ChatGPT Ad Rollout**: With restricted narrow targeting
+- **Amazon-OpenAI Alexa Talks**: Using OpenAI models to enhance Alexa
+- **SpaceX-xAI Integration**: Grok models for autonomous spacecraft and Mars robotics
+- **Euna Solutions Report**: State of AI in Public Sector
+- **USC AI System**: Tracking sex traffickers with court-admissible evidence 
+
