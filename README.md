@@ -1,0 +1,2 @@
+# botman
+agentic flow scratchpad
