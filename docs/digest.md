@@ -3,6 +3,78 @@
 This is a structure document for collecting industry intel on Enteprise Agentic Flow related topics.
 The goal is to use this information to design an enteprise open multi-agent communication protocol.
 
+## Table of Contents
+
+- [Enterprise Agentic AI platforms](#enterprise-agentic-ai-platforms)
+- [Major AI Model Releases (2026)](#major-ai-model-releases-2026)
+  - [Proprietary Models](#proprietary-models)
+  - [Open-Source Models](#open-source-models)
+  - [Specialized Models & Tools](#specialized-models-&-tools)
+- [Enteprise Agentic Flow framework capabilities](#enteprise-agentic-flow-framework-capabilities)
+  - [Schema/model](#schemamodel)
+  - [Blockchain backing](#blockchain-backing)
+  - [Identity](#identity)
+  - [Orchestration](#orchestration)
+  - [Routing](#routing)
+  - [Model management](#model-management)
+  - [Context Management](#context-management)
+  - [Agent capabilities](#agent-capabilities)
+  - [Security](#security)
+  - [Agent Collaboration & Teams](#agent-collaboration-&-teams)
+  - [Agent profile](#agent-profile)
+  - [Benchmarking & Evaluation](#benchmarking-&-evaluation)
+  - [Training & Development](#training-&-development)
+  - [Tools & Integration](#tools-&-integration)
+  - [Agent Autonomy & Reasoning](#agent-autonomy-&-reasoning)
+  - [Domain-Specific Applications](#domain-specific-applications)
+- [Notable Open-Source Projects & Models](#notable-open-source-projects-&-models)
+  - [Multi-Agent Frameworks](#multi-agent-frameworks)
+  - [Memory & Context Tools](#memory-&-context-tools)
+  - [Agent Development Tools](#agent-development-tools)
+  - [Open-Source Models](#open-source-models-1)
+  - [Development Infrastructure](#development-infrastructure)
+  - [Specialized Tools](#specialized-tools)
+- [Emerging Technologies & Research Areas](#emerging-technologies-&-research-areas)
+  - [Advanced Context & Efficiency](#advanced-context-&-efficiency)
+  - [Multimodal Capabilities](#multimodal-capabilities)
+  - [Neuro-Symbolic & Interpretability](#neuro-symbolic-&-interpretability)
+  - [Regional & Specialized Models](#regional-&-specialized-models)
+- [Enterprise Integration Patterns](#enterprise-integration-patterns)
+  - [Governance & Compliance](#governance-&-compliance)
+  - [Business Process Automation](#business-process-automation)
+  - [Development & Deployment](#development-&-deployment)
+- [Industry Trends & Market Dynamics](#industry-trends-&-market-dynamics)
+  - [Major Funding & Investments](#major-funding-&-investments)
+  - [Enterprise Adoption & Trials](#enterprise-adoption-&-trials)
+  - [Market Impacts & Concerns](#market-impacts-&-concerns)
+  - [Regulatory & Policy](#regulatory-&-policy)
+  - [Competitive Landscape](#competitive-landscape)
+- [Research & Academic Developments](#research-&-academic-developments)
+  - [Key Institutions & Initiatives](#key-institutions-&-initiatives)
+  - [Benchmark Development](#benchmark-development)
+  - [Novel Research Directions](#novel-research-directions)
+- [Notable Research Papers](#notable-research-papers)
+  - [Multi-Agent & Reasoning](#multi-agent-&-reasoning)
+  - [Agent Capabilities & Learning](#agent-capabilities-&-learning)
+  - [Training & Fine-Tuning](#training-&-fine-tuning)
+  - [Multimodal & Generation](#multimodal-&-generation)
+  - [Context & Efficiency](#context-&-efficiency)
+  - [Web & Robotics](#web-&-robotics)
+  - [Healthcare & Biology](#healthcare-&-biology)
+  - [Interpretability & Safety](#interpretability-&-safety)
+  - [Medical & Information Extraction](#medical-&-information-extraction)
+  - [Scientific & Research Tools](#scientific-&-research-tools)
+  - [Other Specialized Topics](#other-specialized-topics)
+- [Societal & Educational Impacts](#societal-&-educational-impacts)
+  - [Education & Workforce](#education-&-workforce)
+  - [Ethical & Safety Concerns](#ethical-&-safety-concerns)
+  - [Real-World Applications](#real-world-applications)
+- [Notable Tools & Announcements](#notable-tools-&-announcements)
+  - [Development Tools](#development-tools)
+  - [Integrations & Plugins](#integrations-&-plugins)
+  - [Infrastructure & Platform Updates](#infrastructure-&-platform-updates)
+  - [Other Notable Developments](#other-notable-developments)
+
 ## Enterprise Agentic AI platforms
 
 The list of major or promising enterprise platforms:
@@ -11,7 +83,7 @@ The list of major or promising enterprise platforms:
 - Anthropic's Cowork 
 - Corti Agentic Framework
 - Google Enterprise Agent Hubs
-- IBM FlashSystem (Agentic AI for storage)
+- IBM FlashSystem (Agentic AI for storage): Models 5600, 7600, 9600 acting as "co-administrators"
 
 ## Major AI Model Releases (2026)
 
@@ -26,6 +98,8 @@ The list of major or promising enterprise platforms:
 - **Hedra Omnia Alpha**: Audio-driven generative model with full control
 
 ### Open-Source Models
+- **GLM-5 (Zhipu AI)**: 744B parameters (40B active) MoE, 200K context, strong agentic/coding capabilities. Trained on Huawei Ascend.
+- **RynnBrain (Alibaba)**: Embodied AI model for robotics based on Qwen3-VL, SOTA on physical environment understanding.
 - **Kimi K2.5 (Moonshot AI)**: 1T parameters MoE, 15T tokens, Agent Swarm, 96% on AIME 2025, 87% on GPQA-Diamond
 - **Qwen 3 (Alibaba)**: MCP support, 119 languages, hybrid reasoning
 - **Qwen3-Coder-Next**: 80B params (3B active), 800K verifiable tasks, matches Sonnet 4.5
@@ -89,7 +163,7 @@ Routing work
 - Sleeper agent backdoor detection (Microsoft)
 - Built-in vulnerability detection (GPT-5.3 Codex)
 - Cybersecurity capabilities and CTF challenges
-- Ransomware detection (<1 min, IBM FlashSystem)
+- **IBM FlashSystem**: Ransomware detection (<1 min), autonomous threat analysis, rapid recovery
 - Guardrails and governance controls
 - Safe inference and enterprise compliance
 - THINKSAFE: Self-Generated Safety Alignment for Reasoning Models
@@ -177,10 +251,11 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Threat intelligence visualization (Quantickle)
 
 #### Robotics & Physical World
-- xAI models for physical world understanding
-- DynamicVLA: Vision-Language-Action Model for dynamic object manipulation
-- Toyota self-learning assembly AI
-- Carbon Robotics Large Plant Model (LPM)
+- **Alibaba RynnBrain**: Embodied AI model for robotics (Qwen3-VL based)
+- **xAI models for physical world understanding**
+- **DynamicVLA**: Vision-Language-Action Model for dynamic object manipulation
+- **Toyota self-learning assembly AI**
+- **Carbon Robotics Large Plant Model (LPM)**
 
 #### Software Development
 - Agentic coding (GPT-5.3 Codex, Claude Opus 4.6)
@@ -369,6 +444,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 ## Notable Research Papers
 
 ### Multi-Agent & Reasoning
+- **Auditing Multi-Agent LLM Reasoning Trees**: Outperforms Majority Vote and LLM-as-Judge
 - **DyTopo**: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching (arXiv:2602.06039)
 - **AgenticPay**: Multi-Agent LLM Negotiation System for Buyer-Seller Transactions (arXiv:2602.06008)
 - **Scaling Multiagent Systems with Process Rewards**: Improving coordination with reward structures
@@ -378,6 +454,9 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **AGI as Collective Intelligence**: Networks of specialized agents vs single system (Google DeepMind)
 
 ### Agent Capabilities & Learning
+- **Agent World Model**: Infinity Synthetic Environments for Agentic Reinforcement Learning
+- **PABU**: Progress-Aware Belief Update for Efficient LLM Agents
+- **CODE-SHARP**: Hierarchical skill evolution
 - **MemSkill**: Learning and Evolving Memory Skills for Self-Evolving Agents
 - **ScaleEnv**: Synthesizing diverse training environments for generalist tool-use agents
 - **ASTRA**: Automated Synthesis of Agentic Trajectories
@@ -409,6 +488,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **Quantum Reinforcement Learning with Transformers**: Capacitated Vehicle Routing Problem (arXiv:2602.05920)
 
 ### Healthcare & Biology
+- **CoMMa**: Contribution-Aware Medical Multi-Agents From A Game-Theoretic Perspective
 - **Early and Prediagnostic Detection of Pancreatic Cancer from Computed Tomography** (arXiv:2601.22125)
 - **BABE: Biology Arena BEnchmark** (arXiv:2602.05857)
 - **Predicting Evolutionary Rate as a Pretraining Task**: Improves Genome Language Models
