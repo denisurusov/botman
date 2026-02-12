@@ -4,13 +4,20 @@ This is a structure document for collecting industry intel on Enteprise Agentic 
 The goal is to use this information to design an enteprise open multi-agent communication protocol.
 
 ## Table of Contents
+[docs/digest.md]
+# Introduction
+
+This is a structure document for collecting industry intel on Enteprise Agentic Flow related topics.
+The goal is to use this information to design an enteprise open multi-agent communication protocol.
+
+## Table of Contents
 
 - [Enterprise Agentic AI platforms](#enterprise-agentic-ai-platforms)
 - [Major AI Model Releases (2026)](#major-ai-model-releases-2026)
   - [Proprietary Models](#proprietary-models)
   - [Open-Source Models](#open-source-models)
-  - [Specialized Models & Tools](#specialized-models-&-tools)
-- [Enteprise Agentic Flow framework capabilities](#enteprise-agentic-flow-framework-capabilities)
+  - [Specialized Models & Tools](#specialized-models--tools)
+- [Enterprise Agentic Flow framework capabilities](#enterprise-agentic-flow-framework-capabilities)
   - [Schema/model](#schemamodel)
   - [Blockchain backing](#blockchain-backing)
   - [Identity](#identity)
@@ -18,62 +25,14 @@ The goal is to use this information to design an enteprise open multi-agent comm
   - [Routing](#routing)
   - [Model management](#model-management)
   - [Context Management](#context-management)
-  - [Agent capabilities](#agent-capabilities)
   - [Security](#security)
-  - [Agent Collaboration & Teams](#agent-collaboration-&-teams)
+  - [Agent Collaboration & Teams](#agent-collaboration--teams)
   - [Agent profile](#agent-profile)
-  - [Benchmarking & Evaluation](#benchmarking-&-evaluation)
-  - [Training & Development](#training-&-development)
-  - [Tools & Integration](#tools-&-integration)
-  - [Agent Autonomy & Reasoning](#agent-autonomy-&-reasoning)
-  - [Domain-Specific Applications](#domain-specific-applications)
-- [Notable Open-Source Projects & Models](#notable-open-source-projects-&-models)
-  - [Multi-Agent Frameworks](#multi-agent-frameworks)
-  - [Memory & Context Tools](#memory-&-context-tools)
-  - [Agent Development Tools](#agent-development-tools)
-  - [Open-Source Models](#open-source-models-1)
-  - [Development Infrastructure](#development-infrastructure)
-  - [Specialized Tools](#specialized-tools)
-- [Emerging Technologies & Research Areas](#emerging-technologies-&-research-areas)
-  - [Advanced Context & Efficiency](#advanced-context-&-efficiency)
-  - [Multimodal Capabilities](#multimodal-capabilities)
-  - [Neuro-Symbolic & Interpretability](#neuro-symbolic-&-interpretability)
-  - [Regional & Specialized Models](#regional-&-specialized-models)
-- [Enterprise Integration Patterns](#enterprise-integration-patterns)
-  - [Governance & Compliance](#governance-&-compliance)
-  - [Business Process Automation](#business-process-automation)
-  - [Development & Deployment](#development-&-deployment)
-- [Industry Trends & Market Dynamics](#industry-trends-&-market-dynamics)
-  - [Major Funding & Investments](#major-funding-&-investments)
-  - [Enterprise Adoption & Trials](#enterprise-adoption-&-trials)
-  - [Market Impacts & Concerns](#market-impacts-&-concerns)
-  - [Regulatory & Policy](#regulatory-&-policy)
-  - [Competitive Landscape](#competitive-landscape)
-- [Research & Academic Developments](#research-&-academic-developments)
-  - [Key Institutions & Initiatives](#key-institutions-&-initiatives)
-  - [Benchmark Development](#benchmark-development)
-  - [Novel Research Directions](#novel-research-directions)
-- [Notable Research Papers](#notable-research-papers)
-  - [Multi-Agent & Reasoning](#multi-agent-&-reasoning)
-  - [Agent Capabilities & Learning](#agent-capabilities-&-learning)
-  - [Training & Fine-Tuning](#training-&-fine-tuning)
-  - [Multimodal & Generation](#multimodal-&-generation)
-  - [Context & Efficiency](#context-&-efficiency)
-  - [Web & Robotics](#web-&-robotics)
-  - [Healthcare & Biology](#healthcare-&-biology)
-  - [Interpretability & Safety](#interpretability-&-safety)
-  - [Medical & Information Extraction](#medical-&-information-extraction)
-  - [Scientific & Research Tools](#scientific-&-research-tools)
-  - [Other Specialized Topics](#other-specialized-topics)
-- [Societal & Educational Impacts](#societal-&-educational-impacts)
-  - [Education & Workforce](#education-&-workforce)
-  - [Ethical & Safety Concerns](#ethical-&-safety-concerns)
-  - [Real-World Applications](#real-world-applications)
-- [Notable Tools & Announcements](#notable-tools-&-announcements)
-  - [Development Tools](#development-tools)
-  - [Integrations & Plugins](#integrations-&-plugins)
-  - [Infrastructure & Platform Updates](#infrastructure-&-platform-updates)
-  - [Other Notable Developments](#other-notable-developments)
+  - [Benchmarking & Evaluation](#benchmarking--evaluation)
+  - [Training & Development](#training--development)
+  - [Tools & Integration](#tools--integration)
+  - [Agent Autonomy & Reasoning](#agent-autonomy--reasoning)
+  - [Observability & Evaluation](#observability--evaluation)
 
 ## Enterprise Agentic AI platforms
 
@@ -160,7 +119,7 @@ The list of major or promising enterprise platforms:
 - DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching (https://arxiv.org/list/cs.AI/recent)
 - LLM Router (https://github.com/ulab-uiuc/LLMRouter)
 
-### Model management
+### Model Management
 - Enterprise policy-driven model selection: Hybrid/multi-vendor routing with constraints for sovereignty, cost, latency, and compliance (e.g., prefer local/open models for sensitive data).
 - Model Council (Perplexity)
 - Hybrid model support (mixed Claude, Gemini, GPT, Grok, local)
@@ -173,9 +132,7 @@ The list of major or promising enterprise platforms:
 - Persistent memory (claude-mem plugin)
 - Adaptive effort controls
 
-### Agent capabilities 
-
-### Security 
+### Security
 - Autonomous threat response: Real-time detection, analysis, and recovery for infrastructure threats (e.g., ransomware patterns from IBM).
 - Protocol-native security: End-to-end encryption, zero-trust for A2A/MCP communications, and built-in provenance tracking.
 - Agent2Agent threat taxonomy (arXiv:2602.05877)
@@ -199,7 +156,7 @@ The list of major or promising enterprise platforms:
 ### Agent profile
 - **Enterprise Role Mapping**: Agents mapped to organizational hierarchies, responsibilities, and approval chains.
 - **Skills & Plugins Catalog**: Standardized, extensible skill definitions with MCP-compatible interfaces.
-- 
+
 #### Communication & Negotiation
 - AgenticPay: Multi-Agent LLM Negotiation System for Buyer-Seller Transactions (arXiv:2602.06008)
 
