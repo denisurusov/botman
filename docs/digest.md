@@ -105,7 +105,7 @@ The list of major or promising enterprise platforms:
 - **Qwen3-Coder-Next**: 80B params (3B active), 800K verifiable tasks, matches Sonnet 4.5
 - **Qwen3-TTS**: Multilingual text-to-speech with voice cloning
 - **MiniCPM-o 4.5 (OpenBMB)**: 9B params, first open-source full-duplex omni-modal LLM, 77.6 on OpenCompass
-- **K2 Think V2 (MBZUAI)**: Frontier-class reasoning model on sovereign system
+- **K2 Think V2 (MBZUAI)**: Frontier-class reasoning model on a sovereign system
 - **Hermes 4 70B**: Beats Grok 4 and Gemini 2.5 in coding, logic, writing
 - **ACE-Step-v1.5**: 2B music generation AI, ~4GB VRAM, MIT-licensed
 - **Latam-GPT (Chile)**: First major LLM for Latin America, $550K development cost
@@ -121,9 +121,13 @@ The list of major or promising enterprise platforms:
 - **DiffSyn (MIT)**: Material synthesis recipe generation
 - **Grok Imagine API**: Image generation API
 
-## Enteprise Agentic Flow framework capabilities
+## Enterprise Agentic Flow framework capabilities
 
 ### Schema/model
+
+- Full compliance with and extensions to **MCP** (Model Context Protocol) for secure, standardized agent-to-tool/data connections (supported by Qwen 3, Corti, Google; emerging as de facto standard). Include metadata for governance, provenance, and enterprise policies.
+- Support for complementary protocols: A2A (Agent-to-Agent) for peer coordination and ACP for lightweight messaging, enabling cross-platform interoperability.
+
 #### OSAF
 #### Model Context Protocol (MCP)
 - Supported by Qwen 3, Corti Agentic Framework
@@ -133,24 +137,37 @@ The list of major or promising enterprise platforms:
 #### RFC 8004
 
 ### Identity
+
+- Enterprise IAM federation: Integration with SSO, RBAC, attribute-based access control (ABAC), and directory services (e.g., Active Directory, Okta). Agents inherit organizational roles and permissions (inspired by OpenAI Frontier and Google).
+- Agent identity lifecycle: Persistent, auditable agent identities with revocation, rotation, and cross-platform federation.
+
 #### Agntcy
 
 ### Orchestration
+
+- Governed orchestration layer: Single orchestrator for execution graphs, deterministic validation, and guardrail enforcement across multi-agent teams (Corti-style).
+- Outcome-based execution: Support for contracts/SLAs binding agents to measurable results (OpenAI Outcome Contracts), with automated monitoring and remediation.
+- Infrastructure co-administration patterns: Agents as autonomous co-managers for systems like storage, networks, or clouds (IBM FlashSystem model).
+
 - Multi-agent teams (Anthropic Claude Opus 4.6)
 - Parallel execution (OpenAI Frontier)
 - Dynamic agent coordination and handoffs
 - Shared context and onboarding
 
 ### Routing
-Routing work
+- Policy-aware semantic routing: Combine DyTopo-style semantic matching with enterprise rules (compliance, cost, data residency, model preferences).
+- Dynamic load balancing and discovery for agent swarms, including cross-vendor routing via open protocols (MCP/A2A).
 - DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching (https://arxiv.org/list/cs.AI/recent)
 - LLM Router (https://github.com/ulab-uiuc/LLMRouter)
 
 ### Model management
+- Enterprise policy-driven model selection: Hybrid/multi-vendor routing with constraints for sovereignty, cost, latency, and compliance (e.g., prefer local/open models for sensitive data).
 - Model Council (Perplexity)
 - Hybrid model support (mixed Claude, Gemini, GPT, Grok, local)
 
 ### Context Management
+- Shared business context layer: Semantic integration with enterprise data sources (warehouses, CRMs, docs) for persistent institutional memory (OpenAI Frontier).
+- Advanced memory banks and sessions: Cross-session persistence, compaction, and versioning with auditability.
 - 1M token context windows (Claude Opus 4.6)
 - Context compaction for long-running tasks
 - Persistent memory (claude-mem plugin)
@@ -159,6 +176,8 @@ Routing work
 ### Agent capabilities 
 
 ### Security 
+- Autonomous threat response: Real-time detection, analysis, and recovery for infrastructure threats (e.g., ransomware patterns from IBM).
+- Protocol-native security: End-to-end encryption, zero-trust for A2A/MCP communications, and built-in provenance tracking.
 - Agent2Agent threat taxonomy (arXiv:2602.05877)
 - Sleeper agent backdoor detection (Microsoft)
 - Built-in vulnerability detection (GPT-5.3 Codex)
@@ -169,6 +188,8 @@ Routing work
 - THINKSAFE: Self-Generated Safety Alignment for Reasoning Models
 
 ### Agent Collaboration & Teams
+- Plugin and expert ecosystem: Modular, open-source plugins for role-specific capabilities (Anthropic Cowork) and domain experts (Corti), discoverable via registry.
+- Agent marketplace patterns: Standardized publishing/sharing of agents or teams (Google Gemini Enterprise style), with version control and compatibility checks.
 - Multi-agent teams with parallel coordination (Anthropic)
 - Subagent handoffs and autonomous coordination
 - Agent-to-Agent (A2A) communication
@@ -176,7 +197,9 @@ Routing work
 - Agent swarm orchestration (Kimi K2.5 Agent Swarm)
 
 ### Agent profile
-
+- **Enterprise Role Mapping**: Agents mapped to organizational hierarchies, responsibilities, and approval chains.
+- **Skills & Plugins Catalog**: Standardized, extensible skill definitions with MCP-compatible interfaces.
+- 
 #### Communication & Negotiation
 - AgenticPay: Multi-Agent LLM Negotiation System for Buyer-Seller Transactions (arXiv:2602.06008)
 
@@ -207,7 +230,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 ### Benchmarking & Evaluation
 - AIRS-Bench: evaluating frontier AI agents on scientific research tasks
 - CAR-bench: Evaluating consistency and limit-awareness under uncertainty
-- BABE: Biology Arena BEnchmark
+- BABE: Biology Arena Benchmark
 - SWE-Bench Pro, SWE-Bench Verified
 - Terminal-Bench 2.0 (agentic coding)
 - GDPval-AA (economic value tasks)
@@ -224,6 +247,9 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Self-Improving Pretraining with post-trained judge models
 
 ### Tools & Integration
+- Native MCP client/server support for tool/data discovery and invocation.
+- Enterprise connector framework: Pre-built or configurable adapters for ERP (SAP, Oracle), CRM (Salesforce), productivity suites (Microsoft 365, Google Workspace), and infrastructure (storage, databases).
+- Secure code execution sandboxes and desktop/local automation interfaces (Cowork + OpenAI computer use patterns).
 - Customizable plug-ins (Anthropic Cowork)
 - Third-party system integration (Salesforce, Workday, databases)
 - PowerPoint and Excel integration
@@ -239,6 +265,10 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Hybrid reasoning modes
 - Proactive interactions and reminders
 
+### Observability & Evaluation
+- Standardized logging, tracing (OpenTelemetry), and monitoring for multi-agent flows, including token usage, latency, errors, handoffs, and outcomes.
+- Built-in evaluation loops: Feedback mechanisms, performance optimization, and drift detection (OpenAI Frontier + Google Agent Engine).
+- 
 ### Domain-Specific Applications
 #### Healthcare & Life Sciences
 - Corti Agentic Framework (medical coding, clinical decision support)
@@ -335,7 +365,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Neuro-Symbolic AI Framework combining deep learning with symbolic logic
 - Mechanistic Data Attribution: tracing LLM behaviors to training data
 - Constitutions for atomic concept edits
-- Modality gap-driven subspace alignment
+- Modality-gap-driven subspace alignment
 
 ### Regional & Specialized Models
 - Latam-GPT for Latin American data/languages
@@ -345,19 +375,39 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 
 ## Enterprise Integration Patterns
 
+#### Business Process Automation 
+- Domain-expert orchestration: Reusable, composable experts for verticals (healthcare coding/decision support, financial workflows, legal review).
+- Role-based plugin patterns: Agents tailored to job functions via pluggable skills/connectors (Anthropic Cowork).
+- - Workflow automation in marketing, legal, support
+- Revenue cycle management
+- Procurement, budgeting, grants, payments (public sector)
+- Storage array co-administration (IBM FlashSystem)
+- HR and payroll decision support
+
+### Interoperability & Protocol Patterns
+- MCP-based tool/data access as the standard "USB-C for agents."
+- A2A for cross-agent negotiation, delegation, and coordination in multi-vendor environments.
+- Hybrid protocol bridging: Adapters for legacy systems alongside open standards.
+
+### Observability & Monitoring Patterns
+- Centralized dashboards with tracing across agent teams, human handoffs, and external systems.
+- Anomaly detection and automated remediation for agent drift or failures.
+
+### Human-Agent Collaboration Patterns
+- Shared workspaces with real-time interaction, escalation, and approval workflows.
+- Feedback and learning loops: Agents improve via human input or self-distillation.
+
+### Infrastructure & Autonomy Patterns
+- Co-administration models: Agents embedded in or managing enterprise systems (storage, networks) with autonomous optimization and threat response (IBM).
+- 
 ### Governance & Compliance
+- Governed autonomy: Platform-enforced guardrails, validation at every step, and immutable audit trails with full provenance (Corti + OpenAI).
+- Policy-as-code integration: Centralized enforcement of compliance rules (HIPAA, GDPR, SOX) across agent actions and communications.
 - Agent permissions and access controls
 - Regulatory compliance and auditability
 - Governed autonomy to prevent drift
 - Data access controls and sovereignty
 - Enterprise safety and guardrails
-
-### Business Process Automation
-- Workflow automation in marketing, legal, support
-- Revenue cycle management
-- Procurement, budgeting, grants, payments (public sector)
-- Storage array co-administration (IBM FlashSystem)
-- HR and payroll decision support
 
 ### Development & Deployment
 - Shared business context and onboarding
@@ -365,6 +415,8 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Limited customer availability rollouts
 - Cloud platform integration
 - Desktop and terminal-based interaction (Gemini CLI)
+- Agent onboarding as employees: Shared context, training/feedback loops, and performance reviews (OpenAI Frontier).
+- Marketplace and discovery: Internal agent registries for publishing, versioning, and controlled sharing.
 
 ## Industry Trends & Market Dynamics
 
