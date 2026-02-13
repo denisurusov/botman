@@ -12,6 +12,7 @@ The goal is to use this information to design an enteprise open multi-agent comm
 
 ## Table of Contents
 
+- [Current State (as of Feb 12-13, 2026)](#current-state-as-of-feb-12-13-2026)
 - [Enterprise Agentic AI platforms](#enterprise-agentic-ai-platforms)
 - [Major AI Model Releases (2026)](#major-ai-model-releases-2026)
   - [Proprietary Models](#proprietary-models)
@@ -34,12 +35,25 @@ The goal is to use this information to design an enteprise open multi-agent comm
   - [Agent Autonomy & Reasoning](#agent-autonomy--reasoning)
   - [Observability & Evaluation](#observability--evaluation)
 
+## Current State (as of Feb 12-13, 2026)
+
+**Dominant Themes:**
+- **Agentic AI Dominance**: Multi-agent systems, coding agents, and web-native agents are driving the conversation and market disruption
+- **Enterprise Adoption Acceleration**: Claude Code reaching ~$2.5B annual run rate; rapid growth in business AI subscriptions
+- **Market Disruption & Anxiety**: AI agent displacement fears triggering selloffs across software, finance, insurance, logistics, and other knowledge-work sectors
+- **Infrastructure Investment Surge**: Big Tech committing $660-690B in 2026 AI capex (nearly double prior levels) for data centers and compute
+- **Security & Privacy Focus**: Increased transparency on prompt injection vulnerabilities; emerging child safety concerns with AI toys
+- **Open-Source & Regional AI**: Efforts like Latam-GPT (15+ countries) advancing AI sovereignty and reducing global-north bias
+- **Web-Native Agent Standards**: Chrome WebMCP preview enabling structured agent-to-web interactions beyond scraping
+
+**Overall Industry Vibe**: Excitement over agentic capabilities counterbalanced by disruption anxiety, with continued volatility as enterprises scale AI tools. Positive momentum in open-source efforts, security transparency, and regional AI initiatives.
+
 ## Enterprise Agentic AI platforms
 
 The list of major or promising enterprise platforms:
 
 - OpenAI Frontier Platform 
-- Anthropic's Cowork 
+- Anthropic's Cowork (Claude Code ~$2.5B annual run rate, driving rapid business subscription growth)
 - Corti Agentic Framework
 - Google Enterprise Agent Hubs
 - IBM FlashSystem (Agentic AI for storage): Models 5600, 7600, 9600 acting as "co-administrators"
@@ -67,9 +81,10 @@ The list of major or promising enterprise platforms:
 - **K2 Think V2 (MBZUAI)**: Frontier-class reasoning model on a sovereign system
 - **Hermes 4 70B**: Beats Grok 4 and Gemini 2.5 in coding, logic, writing
 - **ACE-Step-v1.5**: 2B music generation AI, ~4GB VRAM, MIT-licensed
-- **Latam-GPT (Chile)**: First major LLM for Latin America, $550K development cost
+- **Latam-GPT (Chile)**: First major LLM for Latin America, $550K development cost, regional effort with 15+ countries to reduce English/global-north bias and boost AI sovereignty
 - **LongCat-Video (Meituan)**: Text-to-video model, long cinematic videos
 - **AlphaGenome (DeepMind)**: DNA mutation prediction across 11 processes
+- **Aletheia (DeepMind)**: Math research agent with iterative generation, verification, and revision in natural language for autonomous scientific reasoning
 - **RedSage**: Cybersecurity generalist LLM
 - **Arcee Trinity Large**: U.S.-made open-source model with 10T checkpoint
 
@@ -135,6 +150,9 @@ The list of major or promising enterprise platforms:
 ### Security
 - Autonomous threat response: Real-time detection, analysis, and recovery for infrastructure threats (e.g., ransomware patterns from IBM).
 - Protocol-native security: End-to-end encryption, zero-trust for A2A/MCP communications, and built-in provenance tracking.
+- **Anthropic Prompt Injection Metrics**: Detailed failure rates for Claude agents across surfaces (constrained coding vs. GUI with extended thinking); rates scale with persistence (up to 78%+ without safeguards).
+- **Miko AI Toy Data Exposure**: Unsecured database exposing thousands of audio responses/conversations from AI toys interacting with children (flagged Dec 2025-Feb 2026).
+- AI-generated malware and exploits (e.g., React2Shell vulnerabilities)
 - Agent2Agent threat taxonomy (arXiv:2602.05877)
 - Sleeper agent backdoor detection (Microsoft)
 - Built-in vulnerability detection (GPT-5.3 Codex)
@@ -205,6 +223,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 
 ### Tools & Integration
 - Native MCP client/server support for tool/data discovery and invocation.
+- **Google Chrome WebMCP** (Chrome 146 early preview): New standard allowing websites to expose structured, callable tools/APIs to AI agents via browser (navigator.modelContext), reducing reliance on scraping/screenshots for more reliable multi-agent web interactions.
 - Enterprise connector framework: Pre-built or configurable adapters for ERP (SAP, Oracle), CRM (Salesforce), productivity suites (Microsoft 365, Google Workspace), and infrastructure (storage, databases).
 - Secure code execution sandboxes and desktop/local automation interfaces (Cowork + OpenAI computer use patterns).
 - Customizable plug-ins (Anthropic Cowork)
@@ -268,6 +287,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - MassGen: multi-agent system alternative to Claude Code Agent Teams, supports mixed models
 - ChatDev 2.0: LLM-powered multi-agent collaboration for software development (29,946 stars)
 - MoltBook: open-source social network for AI agents
+- **Hive**: Self-evolving topology framework for multi-agent systems
 
 ### Memory & Context Tools
 - claude-mem: TypeScript plugin for persistent memory in coding sessions (24K stars)
@@ -397,11 +417,13 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 ### Market Impacts & Concerns
 - Software stock volatility ("SaaSpocalypse") from AI disruption fears
 - $800B wipeout in software stock values
+- AI agent displacement fears driving selloffs in software, brokerage, insurance, logistics, property services, and finance sectors
 - 50,000+ tech layoffs in 2025 linked to AI shifts
 - Amazon $200B AI spend causing 8% stock drop
-- Big Tech $650B AI capex commitment for 2026
+- Big Tech $650-690B AI capex commitment for 2026 (Microsoft, Amazon, Alphabet, Meta, Oracle) - nearly double prior levels
 - Apple 16% revenue growth from on-device AI
 - Cloud 3.0 and intelligent ops trends
+- Market volatility counterbalanced by strength in AI enablers (Nvidia, TSMC)
 
 ### Regulatory & Policy
 - China state-mandated AI in school curricula
@@ -576,6 +598,9 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 
 ### Other Notable Developments
 - **OpenAI Model Retirements**: Retiring GPT-4o by February 13, 2026
+- **Andrej Karpathy Minimal GPT**: 243-line pure Python GPT implementation (educational "art project")
+- **Dario Amodei Interview**: Discussion on model consciousness and near-term AI scenarios
+- **AI Staffer Exits**: Public warnings from departing AI researchers continue to surface
 - **ChatGPT Ad Rollout**: With restricted narrow targeting
 - **Amazon-OpenAI Alexa Talks**: Using OpenAI models to enhance Alexa
 - **SpaceX-xAI Integration**: Grok models for autonomous spacecraft and Mars robotics
