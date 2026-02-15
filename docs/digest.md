@@ -12,7 +12,7 @@ The goal is to use this information to design an enteprise open multi-agent comm
 
 ## Table of Contents
 
-- [Current State (as of Feb 12-13, 2026)](#current-state-as-of-feb-12-13-2026)
+- [Current State (as of Feb 14, 2026)](#current-state-as-of-feb-14-2026)
 - [Enterprise Agentic AI platforms](#enterprise-agentic-ai-platforms)
 - [Major AI Model Releases (2026)](#major-ai-model-releases-2026)
   - [Proprietary Models](#proprietary-models)
@@ -35,18 +35,22 @@ The goal is to use this information to design an enteprise open multi-agent comm
   - [Agent Autonomy & Reasoning](#agent-autonomy--reasoning)
   - [Observability & Evaluation](#observability--evaluation)
 
-## Current State (as of Feb 12-13, 2026)
+## Current State (as of Feb 14, 2026)
 
 **Dominant Themes:**
 - **Agentic AI Dominance**: Multi-agent systems, coding agents, and web-native agents are driving the conversation and market disruption
 - **Enterprise Adoption Acceleration**: Claude Code reaching ~$2.5B annual run rate; rapid growth in business AI subscriptions
+- **China AI Wave**: Flood of affordable Chinese open models (MiniMax M2.5, GLM-5, Doubao 2.0) with native agentic capabilities pressuring Western pricing
+- **Ultra-Fast Inference**: OpenAI deploys GPT-5.3-Codex-Spark on Cerebras (1000+ tokens/sec), first production non-Nvidia chips
 - **Market Disruption & Anxiety**: AI agent displacement fears triggering selloffs across software, finance, insurance, logistics, and other knowledge-work sectors
 - **Infrastructure Investment Surge**: Big Tech committing $660-690B in 2026 AI capex (nearly double prior levels) for data centers and compute
-- **Security & Privacy Focus**: Increased transparency on prompt injection vulnerabilities; emerging child safety concerns with AI toys
+- **Security & Privacy Focus**: Meta releases FERRET red-teaming framework; increased transparency on prompt injection vulnerabilities
+- **AI Contributing to Science**: GPT-5.2 discovers new theoretical physics result (gluon tree amplitudes)
 - **Open-Source & Regional AI**: Efforts like Latam-GPT (15+ countries) advancing AI sovereignty and reducing global-north bias
 - **Web-Native Agent Standards**: Chrome WebMCP preview enabling structured agent-to-web interactions beyond scraping
+- **Multimodal Video Generation**: ByteDance Seedance 2.0 achieves professional film-quality output, sparking Hollywood concerns
 
-**Overall Industry Vibe**: Excitement over agentic capabilities counterbalanced by disruption anxiety, with continued volatility as enterprises scale AI tools. Positive momentum in open-source efforts, security transparency, and regional AI initiatives.
+**Overall Industry Vibe**: Excitement over agentic capabilities and ultra-fast inference counterbalanced by disruption anxiety, with continued volatility as enterprises scale AI tools. Chinese AI labs accelerating with affordable, production-grade agent orchestration. Positive momentum in open-source efforts, security frameworks, and AI-driven scientific discovery.
 
 ## Enterprise Agentic AI platforms
 
@@ -62,8 +66,13 @@ The list of major or promising enterprise platforms:
 
 ### Proprietary Models
 - **OpenAI GPT-5.3 Codex**: Advanced agentic coding model, 25% faster, SOTA on SWE-Bench Pro (56.8%), Terminal-Bench 2.0 (77.3%), OSWorld-Verified (64.7%)
+- **OpenAI GPT-5.3-Codex-Spark**: Ultra-fast real-time coding variant (1000+ tokens/sec on Cerebras hardware), optimized for interactive development in Codex app/CLI/VS Code, first production deployment on non-Nvidia chips
+- **OpenAI GPT-5.2 Instant**: Updated for improved response style, quality, and efficiency; replaced legacy GPT-4o, GPT-4.1, o4-mini series
+- **OpenAI GPT-5.2**: Made novel discovery in theoretical physics (gluon tree amplitudes formula)
 - **Anthropic Claude Opus 4.6**: 1M token context, multi-agent teams, SOTA on agentic coding, Humanity's Last Exam, GDPval-AA, BigLaw Bench (90.2%), SWE-Bench Verified (81.42%)
 - **Google Gemini 3**: Flagship model for high-level reasoning and agentic operations
+- **ByteDance Doubao 2.0**: Advanced multi-step reasoning and tool use, matches GPT-5.2 and Gemini 3 Pro on deep reasoning
+- **ByteDance Seedance 2.0**: Multimodal video generation (text, images, audio, video inputs), professional film/ad quality with motion stability and physics realism
 - **xAI Physical World Model**: Enhanced understanding and manipulation of physical environments
 - **Google Project Genie**: 3D environment generation from prompts
 - **Perplexity Model Council**: Model aggregation system
@@ -71,6 +80,7 @@ The list of major or promising enterprise platforms:
 - **Hedra Omnia Alpha**: Audio-driven generative model with full control
 
 ### Open-Source Models
+- **MiniMax M2.5 & M2.5 Lightning**: Open-weight Mixture-of-Experts, rivals Claude Opus 4.6 on coding/agentic tasks/search at ~1/20th cost, positioned as "full-stack AI employee"
 - **GLM-5 (Zhipu AI)**: 744B parameters (40B active) MoE, 200K context, strong agentic/coding capabilities. Trained on Huawei Ascend.
 - **RynnBrain (Alibaba)**: Embodied AI model for robotics based on Qwen3-VL, SOTA on physical environment understanding.
 - **Kimi K2.5 (Moonshot AI)**: 1T parameters MoE, 15T tokens, Agent Swarm, 96% on AIME 2025, 87% on GPQA-Diamond
@@ -91,6 +101,7 @@ The list of major or promising enterprise platforms:
 ### Specialized Models & Tools
 - **Carbon Robotics LPM**: Large Plant Model for real-time weed detection
 - **OpenAI Prism**: Research tool for scientific writing
+- **OpenScholar**: Open-source AI for scientific literature reviews, outperforms giant commercial LLMs on accuracy and citation fidelity, fully reproducible
 - **Mistral Voxtral Transcribe 2**: Audio transcription model
 - **DiffSyn (MIT)**: Material synthesis recipe generation
 - **Grok Imagine API**: Image generation API
@@ -151,6 +162,7 @@ The list of major or promising enterprise platforms:
 - Autonomous threat response: Real-time detection, analysis, and recovery for infrastructure threats (e.g., ransomware patterns from IBM).
 - Protocol-native security: End-to-end encryption, zero-trust for A2A/MCP communications, and built-in provenance tracking.
 - **Anthropic Prompt Injection Metrics**: Detailed failure rates for Claude agents across surfaces (constrained coding vs. GUI with extended thinking); rates scale with persistence (up to 78%+ without safeguards).
+- **Meta FERRET Framework**: Open framework for "expansion-reliant red teaming" to systematically probe and improve AI safety/resistance to adversarial attacks.
 - **Miko AI Toy Data Exposure**: Unsecured database exposing thousands of audio responses/conversations from AI toys interacting with children (flagged Dec 2025-Feb 2026).
 - AI-generated malware and exploits (e.g., React2Shell vulnerabilities)
 - Agent2Agent threat taxonomy (arXiv:2602.05877)
@@ -203,7 +215,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
  - OpenAI's Outcome Contracts: A new feature binding autonomous agents to measurable business results, shifting from task-based to outcome-driven AI
 
 ### Benchmarking & Evaluation
-- AIRS-Bench: evaluating frontier AI agents on scientific research tasks
+- **AIRS-Bench**: Benchmark suite for frontier AI science agents across full research lifecycle (30+ authors)
 - CAR-bench: Evaluating consistency and limit-awareness under uncertainty
 - BABE: Biology Arena Benchmark
 - SWE-Bench Pro, SWE-Bench Verified
@@ -276,9 +288,11 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 
 #### Research & Science
 - OpenAI Prism for scientific writing
+- **OpenScholar**: Open-source AI for scientific literature reviews, outperforms commercial LLMs, published in *Nature*
 - Idea2Story: automated research narrative pipeline
 - AIRS-Bench for AI scientists
 - AlphaGenome for disease-causing DNA mutation prediction
+- **GPT-5.2 Discovery**: Novel formula for gluon tree amplitudes in theoretical physics, verified by human researchers
 
 ## Notable Open-Source Projects & Models
 
@@ -483,8 +497,11 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **Exploring Reasoning Reward Model for Agents** (arXiv:2601.22154)
 - **Agent2Agent Threats in Safety-Critical LLM Assistants**: Human-Centric Taxonomy (arXiv:2602.05877)
 - **AGI as Collective Intelligence**: Networks of specialized agents vs single system (Google DeepMind)
+- **Meta-Agents Research**: Papers on higher-level agent orchestration and coordination
+- **Persuasion Dynamics in LLM Swarms**: Research on influence and coordination in multi-agent systems
 
 ### Agent Capabilities & Learning
+- **Position: Agentic Evolution is the Path to Evolving LLMs**: Argues for agent-driven self-improvement in models
 - **Agent World Model**: Infinity Synthetic Environments for Agentic Reinforcement Learning
 - **PABU**: Progress-Aware Belief Update for Efficient LLM Agents
 - **CODE-SHARP**: Hierarchical skill evolution
@@ -493,6 +510,8 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **ASTRA**: Automated Synthesis of Agentic Trajectories
 - **Golden Goose**: Synthesize Unlimited RLVR Tasks
 - **Spider-Sense**: Intrinsic Risk Sensing for Efficient Agent Defense with Hierarchical Adaptive Screening
+- **Memory Mechanisms for Multi-Agent Systems**: Papers on polarized memory for verifiable agents
+- **Game-Theoretic Reasoning in Agents**: Including poker benchmarks and debate efficiency
 
 ### Training & Fine-Tuning
 - **Self-Distillation Fine-Tuning (SDFT)**: Continual learning without catastrophic forgetting (MIT & ETH Zurich)
@@ -597,7 +616,9 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **Tesla Autopilot AI Update**: Improved navigation and obstacle detection
 
 ### Other Notable Developments
-- **OpenAI Model Retirements**: Retiring GPT-4o by February 13, 2026
+- **OpenAI Model Retirements**: Retiring GPT-4o, GPT-4.1 series, o4-mini by February 13, 2026; API unaffected
+- **Meta Facial Recognition Plans**: "Name Tag" feature for Ray-Ban/Oakley smart glasses planned for 2026, raising privacy concerns
+- **Gemini Hacking Incident**: Targeted with 100k+ cloning prompts
 - **Andrej Karpathy Minimal GPT**: 243-line pure Python GPT implementation (educational "art project")
 - **Dario Amodei Interview**: Discussion on model consciousness and near-term AI scenarios
 - **AI Staffer Exits**: Public warnings from departing AI researchers continue to surface

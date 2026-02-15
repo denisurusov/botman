@@ -2,6 +2,8 @@
 
 ## OpenAI
 - **OpenAI Frontier Platform** — Treats agents as "AI coworkers" with shared business context (connecting data warehouses, CRMs, internal apps for institutional memory), robust agent execution (parallel tasks, tools, code, files), onboarding/feedback loops, identity/permissions/governance (audit logs, boundaries), and outcome-driven workflows (e.g., data analysis, forecasting, software engineering). Strong emphasis on production readiness and enterprise system integration.
+- **GPT-5.3-Codex-Spark** — Ultra-fast real-time coding model delivering 1,000+ tokens per second on Cerebras hardware, enabling near-instant feedback in interactive development tools (Codex app, CLI, VS Code). First production deployment on non-Nvidia chips.
+- **GPT-5.2 Instant Updates** — Regular quality, style, and efficiency improvements pushing enterprises toward newer, more capable models.
 
 ## Anthropic
 - **Anthropic's Cowork** — Desktop-centric agentic execution for multi-step knowledge work (file access/organization, report generation, browser/system interactions). Features customizable plugins/connectors for role-specific workflows (e.g., sales, finance, legal, CRM integrations like Notion/Asana), open-source plugin ecosystem, and autonomous task completion with natural language outcomes.
@@ -14,5 +16,12 @@
 
 ## IBM
 - **IBM FlashSystem (agentic AI for storage)** — Autonomous infrastructure co-administration (models 5600/7600/9600 as "co-administrators"). Features real-time ransomware detection (<1 min), autonomous threat analysis/recovery, performance/security/cost optimization via telemetry-driven decisions, and self-improving operations that reduce manual management significantly.
+
+## MiniMax
+- **MiniMax M2.5 & M2.5 Lightning** — Open-weight Mixture-of-Experts model family for persistent agent orchestration at enterprise scale (~$10k/year for full-stack AI employees). Native agent tools for long-running, multi-step tasks with coding, search, and agentic capabilities rivaling Claude Opus 4.6 at ~1/20th the cost. Positioned for production-grade workflow automation.
+
+## ByteDance
+- **Doubao 2.0** — Advanced consumer/enterprise chatbot with native multi-step reasoning and tool use, matching GPT-5.2 and Gemini 3 Pro on deep reasoning. Ships built-in agent orchestration for complex tasks.
+- **Seedance 2.0** — Multimodal video generation accepting text, images, audio, and video inputs simultaneously for professional film/ad production with physics realism and motion stability.
 
 Common themes across platforms include **MCP** (Model Context Protocol) for standardized tool/data access, strong governance/auditability for enterprises, hybrid/multi-model support, observability, and domain/infrastructure autonomy. Emerging open protocols (MCP for tools, A2A for agent-to-agent, ACP for messaging) align well with the digest's goals.
