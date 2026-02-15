@@ -5,14 +5,10 @@ The goal is to use this information to design an enteprise open multi-agent comm
 
 ## Table of Contents
 [docs/digest.md]
-# Introduction
-
-This is a structure document for collecting industry intel on Enteprise Agentic Flow related topics.
-The goal is to use this information to design an enteprise open multi-agent communication protocol.
 
 ## Table of Contents
 
-- [Current State (as of Feb 14, 2026)](#current-state-as-of-feb-14-2026)
+- [Current State (as of Feb 15, 2026)](#current-state-as-of-feb-15-2026)
 - [Enterprise Agentic AI platforms](#enterprise-agentic-ai-platforms)
 - [Major AI Model Releases (2026)](#major-ai-model-releases-2026)
   - [Proprietary Models](#proprietary-models)
@@ -35,22 +31,25 @@ The goal is to use this information to design an enteprise open multi-agent comm
   - [Agent Autonomy & Reasoning](#agent-autonomy--reasoning)
   - [Observability & Evaluation](#observability--evaluation)
 
-## Current State (as of Feb 14, 2026)
+## Current State (as of Feb 15, 2026)
 
 **Dominant Themes:**
 - **Agentic AI Dominance**: Multi-agent systems, coding agents, and web-native agents are driving the conversation and market disruption
 - **Enterprise Adoption Acceleration**: Claude Code reaching ~$2.5B annual run rate; rapid growth in business AI subscriptions
+- **Regulatory & Geopolitical Tensions**: Canada-Germany AI alliance countering supply chain risks; Japan mandates human oversight in AI agents; Hollywood condemns Seedance 2.0 for copyright violations
+- **AI Safety Crisis Deepening**: International AI Safety Report 2026 warns of existential threats; Pentagon-Anthropic clash over military use; mental health AI boundary violations exposed
+- **Enterprise Intelligence Layer Shift**: Glean pivots to model-agnostic LLM infrastructure ($7.2B valuation), challenging Microsoft/Google dominance
 - **China AI Wave**: Flood of affordable Chinese open models (MiniMax M2.5, GLM-5, Doubao 2.0) with native agentic capabilities pressuring Western pricing
 - **Ultra-Fast Inference**: OpenAI deploys GPT-5.3-Codex-Spark on Cerebras (1000+ tokens/sec), first production non-Nvidia chips
 - **Market Disruption & Anxiety**: AI agent displacement fears triggering selloffs across software, finance, insurance, logistics, and other knowledge-work sectors
 - **Infrastructure Investment Surge**: Big Tech committing $660-690B in 2026 AI capex (nearly double prior levels) for data centers and compute
 - **Security & Privacy Focus**: Meta releases FERRET red-teaming framework; increased transparency on prompt injection vulnerabilities
 - **AI Contributing to Science**: GPT-5.2 discovers new theoretical physics result (gluon tree amplitudes)
-- **Open-Source & Regional AI**: Efforts like Latam-GPT (15+ countries) advancing AI sovereignty and reducing global-north bias
+- **Open-Source Under Siege**: AI-generated "slop" code overwhelming repositories, compared to DDoS attacks on maintainers
 - **Web-Native Agent Standards**: Chrome WebMCP preview enabling structured agent-to-web interactions beyond scraping
 - **Multimodal Video Generation**: ByteDance Seedance 2.0 achieves professional film-quality output, sparking Hollywood concerns
 
-**Overall Industry Vibe**: Excitement over agentic capabilities and ultra-fast inference counterbalanced by disruption anxiety, with continued volatility as enterprises scale AI tools. Chinese AI labs accelerating with affordable, production-grade agent orchestration. Positive momentum in open-source efforts, security frameworks, and AI-driven scientific discovery.
+**Overall Industry Vibe**: Growing tensions between AI safety advocates and defense/commercial interests, with regulatory fragmentation across regions. Enterprise focus shifting toward model-agnostic infrastructure layers. Excitement over agentic capabilities counterbalanced by deepening concerns about safety, ethics, copyright, and code quality degradation. Chinese AI labs accelerating with affordable, production-grade agent orchestration. Positive momentum in international collaboration (Canada-Germany) but increasing friction over military applications and content rights.
 
 ## Enterprise Agentic AI platforms
 
@@ -61,6 +60,7 @@ The list of major or promising enterprise platforms:
 - Corti Agentic Framework
 - Google Enterprise Agent Hubs
 - IBM FlashSystem (Agentic AI for storage): Models 5600, 7600, 9600 acting as "co-administrators"
+- Glean AI Intelligence Layer ($7.2B valuation): Model-agnostic abstraction mixing ChatGPT, Gemini, Claude with open-source options, deep tool integrations, permissions-aware retrieval
 
 ## Major AI Model Releases (2026)
 
@@ -297,6 +297,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 ## Notable Open-Source Projects & Models
 
 ### Multi-Agent Frameworks
+- **Moltbot (OpenClaw)**: Cloud-based open-source automation platform for proactive AI agents in local computing (Feb 15, 2026), viral traction for developer workflows
 - OpenClaw (formerly MoltBot/Clawdbot): personal AI assistant with 162K+ GitHub stars
 - MassGen: multi-agent system alternative to Claude Code Agent Teams, supports mixed models
 - ChatDev 2.0: LLM-powered multi-agent collaboration for software development (29,946 stars)
@@ -440,12 +441,16 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Market volatility counterbalanced by strength in AI enablers (Nvidia, TSMC)
 
 ### Regulatory & Policy
+- **Canada-Germany AI Alliance**: Joint Declaration of Intent on AI (Feb 14, 2026) launching Sovereign Technology Alliance for secure AI compute infrastructure, joint research, and talent development
+- **Japan AI Business Guidelines**: Updated guidelines mandate human judgment mechanisms in AI agents and robots to mitigate malfunction/privacy risks
+- **Hollywood vs. Seedance 2.0**: MPA and SAG-AFTRA accuse ByteDance of large-scale copyright infringement (Feb 15, 2026)
+- **International AI Safety Report 2026**: Warns of existential threats, deepfakes, cyberattacks, and harmful chatbot interactions
 - China state-mandated AI in school curricula
 - Indonesia conditional lift of Grok ban
 - China approval of DeepSeek H200 chip purchase
-- International AI Safety Report 2026
 - AI consciousness and ethics concerns
 - Responsible AI adoption in public sector
+- **EU Probe into xAI's Grok**: Investigation into deepfake risks
 
 ### Competitive Landscape
 - OpenAI vs Anthropic: ad strategy debates (Super Bowl ads)
@@ -512,6 +517,8 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **Spider-Sense**: Intrinsic Risk Sensing for Efficient Agent Defense with Hierarchical Adaptive Screening
 - **Memory Mechanisms for Multi-Agent Systems**: Papers on polarized memory for verifiable agents
 - **Game-Theoretic Reasoning in Agents**: Including poker benchmarks and debate efficiency
+- **SkillRL**: Skill Reinforcement Learning using SkillBank for experience reuse and long-term strategies (arXiv:2602.08234)
+- **VLA-JEPA**: Video-Language-Action Joint Embedding Predictive Architecture for robot skill acquisition (arXiv:2602.10098)
 
 ### Training & Fine-Tuning
 - **Self-Distillation Fine-Tuning (SDFT)**: Continual learning without catastrophic forgetting (MIT & ETH Zurich)
@@ -527,6 +534,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **MOVA**: Towards Scalable and Synchronized Video-Audio Generation
 - **AutoFigure**: Generating and Refining Publication-Ready Scientific Illustrations (ICLR 2026)
 - **Modality Gap-Driven Subspace Alignment**: Training Paradigm for Multimodal LLMs
+- **Drifting Models for Image Generation**: One-step ImageNet synthesis with mid-1s FID scores (arXiv:2602.04770)
 
 ### Context & Efficiency
 - **Hybrid Linear Attention Done Right**: Efficient Distillation for Extremely Long Contexts (arXiv:2601.22156)
@@ -542,6 +550,8 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - **Early and Prediagnostic Detection of Pancreatic Cancer from Computed Tomography** (arXiv:2601.22125)
 - **BABE: Biology Arena BEnchmark** (arXiv:2602.05857)
 - **Predicting Evolutionary Rate as a Pretraining Task**: Improves Genome Language Models
+- **Scalable and Secure AI Inference in Healthcare**: Benchmarks FastAPI and Triton Inference Server on Kubernetes for privacy-preserving medical AI deployment
+- **LLMs in Mental Health Dialogues**: Study reveals frequent ethical boundary violations in prolonged therapy simulations, calling for improved safeguards
 
 ### Interpretability & Safety
 - **Mechanistic Data Attribution**: Tracing Training Origins of Interpretable LLM Units
@@ -573,9 +583,12 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - AI in education mandates (China)
 - Bachelor's programs in AI launching
 - Concerns about AI-generated research flooding journals
+- **AI "Slop" Code Overwhelming Repositories**: cURL maintainer warns AI-generated low-quality code is attacking open-source like DDoS, complicating maintenance (Feb 15, 2026)
 - GitHub considering "kill switch" for AI-generated PRs
 
 ### Ethical & Safety Concerns
+- **Pentagon-Anthropic Safeguards Dispute**: U.S. Pentagon threatens to restrict Anthropic funding over AI safety guardrails limiting military applications; Claude used in Venezuela raid via Palantir
+- **Mental Health AI Boundary Violations**: Study shows LLMs frequently cross ethical boundaries in extended mental health conversations, raising psychological risks
 - AI consciousness risks outpacing understanding
 - Neurotechnology advances and ethics
 - AI-washing behind layoffs
@@ -583,6 +596,7 @@ Scaling Multiagent Systems with Process Rewards (https://arxiv.org/html/2601.232
 - Credibility evaluation in ChatGPT health responses
 - Trust-based scam prevention (BeeSafe AI)
 - Sex trafficking investigation tools (USC)
+- **AI Safety Researcher Resignations**: Notable OpenAI and Anthropic staff departures over safety concerns
 
 ### Real-World Applications
 - Weather forecasting accuracy challenges

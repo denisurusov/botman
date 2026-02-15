@@ -24,4 +24,7 @@
 - **Doubao 2.0** — Advanced consumer/enterprise chatbot with native multi-step reasoning and tool use, matching GPT-5.2 and Gemini 3 Pro on deep reasoning. Ships built-in agent orchestration for complex tasks.
 - **Seedance 2.0** — Multimodal video generation accepting text, images, audio, and video inputs simultaneously for professional film/ad production with physics realism and motion stability.
 
+## Glean
+- **Glean AI Intelligence Layer** — Model-agnostic enterprise infrastructure ($7.2B valuation) providing abstraction layer mixing ChatGPT, Gemini, Claude with open-source models. Features deep integrations with tools (Slack, Salesforce, etc.), permissions-aware retrieval respecting enterprise access controls, hallucination detection, and governance features. Positions as neutral "intelligence layer" beneath enterprise applications, challenging Microsoft and Google's integrated stacks.
+
 Common themes across platforms include **MCP** (Model Context Protocol) for standardized tool/data access, strong governance/auditability for enterprises, hybrid/multi-model support, observability, and domain/infrastructure autonomy. Emerging open protocols (MCP for tools, A2A for agent-to-agent, ACP for messaging) align well with the digest's goals.
